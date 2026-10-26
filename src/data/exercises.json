@@ -1,0 +1,598 @@
+[
+  {
+    "id": "diag_1",
+    "skillId": "p1_concepto",
+    "difficulty": "facil",
+    "isDiagnostic": true,
+    "prompt": "Una pizza se dividió en 6 rebanadas iguales y te comiste 2. ¿Qué fracción de la pizza te comiste?",
+    "visualConfig": {
+      "type": "circle",
+      "numerator": 2,
+      "denominator": 6
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "2/6",
+        "isCorrect": true,
+        "feedback": "¡Exacto! 2 partes comidas de un total de 6 partes iguales."
+      },
+      {
+        "id": "b",
+        "text": "6/2",
+        "isCorrect": false,
+        "feedback": "El total de partes (6) siempre va en el denominador (abajo)."
+      },
+      {
+        "id": "c",
+        "text": "4/6",
+        "isCorrect": false,
+        "feedback": "4/6 es lo que sobró, no lo que te comiste."
+      },
+      {
+        "id": "d",
+        "text": "2/4",
+        "isCorrect": false,
+        "feedback": "El denominador debe ser el total completo de rebanadas (6)."
+      }
+    ],
+    "hints": [
+      "El número de abajo (denominador) representa el total de rebanadas en que se cortó la pizza.",
+      "El número de arriba (numerador) representa cuántas rebanadas te comiste.",
+      "Son 2 partes comidas de 6 totales: se escribe 2/6."
+    ],
+    "explanation": "El denominador cuenta el total de partes iguales (6) y el numerador las partes tomadas (2). Por lo tanto es 2/6."
+  },
+  {
+    "id": "diag_2",
+    "skillId": "p2_terminos",
+    "difficulty": "facil",
+    "isDiagnostic": true,
+    "prompt": "En la fracción 5/9, ¿cuál es el denominador y qué indica?",
+    "options": [
+      {
+        "id": "a",
+        "text": "9, e indica que el total se dividió en 9 partes iguales",
+        "isCorrect": true,
+        "feedback": "¡Brillante! El denominador es el número de abajo y denomina el tamaño de las partes."
+      },
+      {
+        "id": "b",
+        "text": "5, e indica que tenemos 5 partes",
+        "isCorrect": false,
+        "feedback": "5 es el numerador (el número de arriba)."
+      },
+      {
+        "id": "c",
+        "text": "9, e indica cuántas partes tomamos",
+        "isCorrect": false,
+        "feedback": "El que indica cuántas partes tomamos es el numerador (5)."
+      },
+      {
+        "id": "d",
+        "text": "14, que es la suma de ambos",
+        "isCorrect": false,
+        "feedback": "El numerador y denominador se leen por separado, no se suman."
+      }
+    ],
+    "hints": [
+      "Recuerda la 'D': Denominador = Debajo.",
+      "El número de abajo es el 9.",
+      "El 9 indica en cuántas partes iguales se fraccionó la unidad."
+    ],
+    "explanation": "En 5/9, el 5 es el numerador (partes consideradas) y el 9 es el denominador (total de divisiones iguales)."
+  },
+  {
+    "id": "diag_3",
+    "skillId": "p3_equivalencia",
+    "difficulty": "medio",
+    "isDiagnostic": true,
+    "prompt": "¿Cuál de las siguientes fracciones es EQUIVALENTE a 3/4?",
+    "visualConfig": {
+      "type": "bar",
+      "numerator": 3,
+      "denominator": 4
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "6/8",
+        "isCorrect": true,
+        "feedback": "¡Muy bien! Si multiplicas tanto 3 como 4 por 2, obtienes 6/8."
+      },
+      {
+        "id": "b",
+        "text": "4/5",
+        "isCorrect": false,
+        "feedback": "Sumar 1 arriba y abajo no mantiene la proporción."
+      },
+      {
+        "id": "c",
+        "text": "6/4",
+        "isCorrect": false,
+        "feedback": "Si solo duplicas el numerador, la fracción se vuelve el doble de grande."
+      },
+      {
+        "id": "d",
+        "text": "3/8",
+        "isCorrect": false,
+        "feedback": "3/8 es la mitad de 3/4, no es equivalente."
+      }
+    ],
+    "hints": [
+      "Para que sea equivalente, debes multiplicar arriba y abajo por el mismo número.",
+      "Prueba multiplicando 3 × 2 y 4 × 2.",
+      "3 × 2 = 6 y 4 × 2 = 8, lo que nos da 6/8."
+    ],
+    "explanation": "Al multiplicar numerador y denominador por 2: (3×2)/(4×2) = 6/8. Representan la misma porción."
+  },
+  {
+    "id": "diag_4",
+    "skillId": "p4_simplificacion",
+    "difficulty": "medio",
+    "isDiagnostic": true,
+    "prompt": "¿Cuál es la forma irreducible (más simplificada) de 8/12?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2/3",
+        "isCorrect": true,
+        "feedback": "¡Excelente! Al dividir 8 y 12 entre 4 obtienes 2/3, que ya no se puede reducir más."
+      },
+      {
+        "id": "b",
+        "text": "4/6",
+        "isCorrect": false,
+        "feedback": "4/6 es equivalente, pero aún se puede simplificar dividiendo entre 2 otra vez."
+      },
+      {
+        "id": "c",
+        "text": "1/2",
+        "isCorrect": false,
+        "feedback": "1/2 equivale a 6/12, no a 8/12."
+      },
+      {
+        "id": "d",
+        "text": "2/4",
+        "isCorrect": false,
+        "feedback": "2/4 equivale a 6/12 y no es irreducible."
+      }
+    ],
+    "hints": [
+      "Busca el divisor común más grande entre 8 y 12.",
+      "Ambos números están en la tabla del 4: 8 ÷ 4 y 12 ÷ 4.",
+      "8 ÷ 4 = 2 y 12 ÷ 4 = 3, dando 2/3."
+    ],
+    "explanation": "Dividiendo numerador y denominador entre 4: 8÷4 = 2 y 12÷4 = 3. Como 2 y 3 no comparten divisores mayores que 1, 2/3 es irreducible."
+  },
+  {
+    "id": "diag_5",
+    "skillId": "p5_comparacion",
+    "difficulty": "medio",
+    "isDiagnostic": true,
+    "prompt": "¿Qué afirmación es VERDADERA al comparar 4/7 y 6/7?",
+    "visualConfig": {
+      "type": "bar",
+      "numerator": 4,
+      "denominator": 7,
+      "comparisonNumerator": 6,
+      "comparisonDenominator": 7
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "6/7 es mayor que 4/7",
+        "isCorrect": true,
+        "feedback": "¡Correcto! Con el mismo denominador, tener 6 partes es más que tener 4 partes."
+      },
+      {
+        "id": "b",
+        "text": "4/7 es mayor que 6/7",
+        "isCorrect": false,
+        "feedback": "Como los trozos tienen el mismo tamaño (séptimos), 6 trozos superan a 4 trozos."
+      },
+      {
+        "id": "c",
+        "text": "Son exactamente iguales",
+        "isCorrect": false,
+        "feedback": "Los numeradores son distintos (4 y 6), por lo que no son iguales."
+      },
+      {
+        "id": "d",
+        "text": "No se pueden comparar",
+        "isCorrect": false,
+        "feedback": "¡Claro que se pueden comparar! De hecho, al tener igual denominador es muy directo."
+      }
+    ],
+    "hints": [
+      "Ambas fracciones tienen el mismo denominador (7), lo que significa que los trozos son idénticos.",
+      "Compara directamente los numeradores: ¿es mayor 4 o 6?",
+      "6 > 4, por lo tanto 6/7 > 4/7."
+    ],
+    "explanation": "Al tener el mismo denominador, la fracción con el numerador más alto es la mayor. 6/7 > 4/7."
+  },
+  {
+    "id": "diag_6",
+    "skillId": "p6_recta",
+    "difficulty": "medio",
+    "isDiagnostic": true,
+    "prompt": "En una recta numérica entre 0 y 1 dividida en 4 partes iguales, ¿dónde se ubica 3/4?",
+    "visualConfig": {
+      "type": "number-line",
+      "numerator": 3,
+      "denominator": 4
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "En la tercera marca contando desde el 0",
+        "isCorrect": true,
+        "feedback": "¡Exactamente! Cada paso es 1/4, así que 3 pasos te sitúan en 3/4."
+      },
+      {
+        "id": "b",
+        "text": "Justo en el centro exacto de la recta",
+        "isCorrect": false,
+        "feedback": "El centro exacto entre 0 y 1 es 2/4 (o 1/2)."
+      },
+      {
+        "id": "c",
+        "text": "En la primera marca a la derecha del 0",
+        "isCorrect": false,
+        "feedback": "La primera marca corresponde a 1/4."
+      },
+      {
+        "id": "d",
+        "text": "Después del número 1",
+        "isCorrect": false,
+        "feedback": "Como el numerador (3) es menor que el denominador (4), la fracción es menor que 1."
+      }
+    ],
+    "hints": [
+      "Imagina 4 saltos iguales de longitud 1/4 desde el 0 hasta el 1.",
+      "Primer salto = 1/4, segundo salto = 2/4, tercer salto = 3/4.",
+      "El punto 3/4 se ubica en la tercera división."
+    ],
+    "explanation": "La recta de 0 a 1 subdividida en 4 intervalos iguales tiene marcas en 1/4, 2/4, 3/4 y 4/4 (1). 3/4 es la 3.ª marca."
+  },
+  {
+    "id": "diag_7",
+    "skillId": "p7_suma_igual_den",
+    "difficulty": "medio",
+    "isDiagnostic": true,
+    "prompt": "Calcula el resultado de: 2/9 + 4/9",
+    "options": [
+      {
+        "id": "a",
+        "text": "6/9",
+        "isCorrect": true,
+        "feedback": "¡Impecable! Sumas los numeradores (2 + 4 = 6) y mantienes el denominador 9."
+      },
+      {
+        "id": "b",
+        "text": "6/18",
+        "isCorrect": false,
+        "feedback": "¡Cuidado con la trampa! Nunca se suman los denominadores en fracciones."
+      },
+      {
+        "id": "c",
+        "text": "8/9",
+        "isCorrect": false,
+        "feedback": "Revisa la suma de arriba: 2 + 4 = 6, no 8."
+      },
+      {
+        "id": "d",
+        "text": "2/9",
+        "isCorrect": false,
+        "feedback": "Al agregar 4/9 la cantidad debe aumentar."
+      }
+    ],
+    "hints": [
+      "Recuerda la regla básica de la suma: conserva el denominador y suma los numeradores.",
+      "Denominador = 9. Numeradores = 2 + 4.",
+      "2 + 4 = 6, por lo que el resultado es 6/9."
+    ],
+    "explanation": "Al sumar fracciones con igual denominador: (2 + 4)/9 = 6/9. (Que además se puede simplificar a 2/3)."
+  },
+  {
+    "id": "diag_8",
+    "skillId": "p8_resta_igual_den",
+    "difficulty": "medio",
+    "isDiagnostic": true,
+    "prompt": "Sofía tenía 7/10 de un litro de jugo y bebió 3/10 de litro. ¿Cuánto jugo le queda?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4/10 de litro (o 2/5)",
+        "isCorrect": true,
+        "feedback": "¡Gran trabajo! 7/10 - 3/10 = 4/10. ¡Has resuelto un problema contextualizado!"
+      },
+      {
+        "id": "b",
+        "text": "4/0 de litro",
+        "isCorrect": false,
+        "feedback": "El denominador no se resta ni puede ser cero; se conserva el 10."
+      },
+      {
+        "id": "c",
+        "text": "10/10 de litro",
+        "isCorrect": false,
+        "feedback": "Al beber jugo la cantidad disminuye, no se llena."
+      },
+      {
+        "id": "d",
+        "text": "3/10 de litro",
+        "isCorrect": false,
+        "feedback": "3/10 es lo que bebió. Para saber lo que queda hacemos 7 - 3."
+      }
+    ],
+    "hints": [
+      "Plantea la operación: jugo inicial menos jugo bebido.",
+      "7/10 - 3/10.",
+      "Resta solo arriba: 7 - 3 = 4, conservando el 10: 4/10."
+    ],
+    "explanation": "7/10 - 3/10 = (7 - 3)/10 = 4/10 de litro. Simplificado dividiendo entre 2 equivale a 2/5 de litro."
+  },
+  {
+    "id": "prac_p1_1",
+    "skillId": "p1_concepto",
+    "difficulty": "facil",
+    "prompt": "Un pastel se corta en 8 rebanadas del mismo tamaño. Si tomas 5 rebanadas, ¿qué fracción representa lo que tomaste?",
+    "visualConfig": { "type": "circle", "numerator": 5, "denominator": 8 },
+    "options": [
+      { "id": "a", "text": "5/8", "isCorrect": true, "feedback": "¡Correcto! Tomaste 5 partes de 8 totales." },
+      { "id": "b", "text": "3/8", "isCorrect": false, "feedback": "3/8 es lo que quedó en el plato." },
+      { "id": "c", "text": "8/5", "isCorrect": false, "feedback": "El total de rebanadas va en el denominador (abajo)." }
+    ],
+    "hints": [
+      "El número de partes tomadas va arriba.",
+      "El total de partes va abajo.",
+      "5 partes tomadas de 8 totales = 5/8."
+    ],
+    "explanation": "Numerador = 5, Denominador = 8. La fracción es 5/8."
+  },
+  {
+    "id": "prac_p1_2",
+    "skillId": "p1_concepto",
+    "difficulty": "medio",
+    "prompt": "¿Por qué un rectángulo dividido en 3 franjas de anchos diferentes NO representa tercios (1/3)?",
+    "options": [
+      { "id": "a", "text": "Porque las partes no son de igual tamaño", "isCorrect": true, "feedback": "¡Exacto! La igualdad de las partes es la condición sagrada de las fracciones." },
+      { "id": "b", "text": "Porque los rectángulos no se pueden fraccionar", "isCorrect": false, "feedback": "Cualquier figura geométrica se puede fraccionar si las partes son iguales." },
+      { "id": "c", "text": "Porque el número 3 es impar", "isCorrect": false, "feedback": "Podemos dividir en cualquier número entero positivo de partes iguales." }
+    ],
+    "hints": [
+      "Piensa en si sería justo repartir un chocolate con partes disparejas.",
+      "Una fracción exige que cada unidad fraccionaria sea idéntica en área.",
+      "Si los anchos son distintos, no son partes iguales."
+    ],
+    "explanation": "Para que represente 1/3, cada parte debe tener exactamente la misma área o tamaño que las demás."
+  },
+  {
+    "id": "prac_p2_1",
+    "skillId": "p2_terminos",
+    "difficulty": "facil",
+    "prompt": "En una receta se usan 3/4 de taza de harina. ¿Qué representa el 3 y qué representa el 4?",
+    "options": [
+      { "id": "a", "text": "El 4 es la taza dividida en 4 partes iguales; el 3 son las partes que usamos", "isCorrect": true, "feedback": "¡Gran comprensión! El 4 denomina el cuarto de taza y el 3 cuenta cuántos usamos." },
+      { "id": "b", "text": "Usamos 4 tazas y nos sobran 3", "isCorrect": false, "feedback": "3/4 es menos de una taza completa." },
+      { "id": "c", "text": "El 3 es el total y el 4 es lo que usamos", "isCorrect": false, "feedback": "El número de abajo siempre es el total de particiones de la unidad." }
+    ],
+    "hints": [
+      "El número inferior es el divisor de la unidad (denominador).",
+      "El número superior cuenta las porciones seleccionadas.",
+      "La taza se parte en 4 cuartos y se toman 3."
+    ],
+    "explanation": "Denominador = 4 (la taza se particiona en cuartos). Numerador = 3 (usamos 3 cuartos)."
+  },
+  {
+    "id": "prac_p3_1",
+    "skillId": "p3_equivalencia",
+    "difficulty": "facil",
+    "prompt": "¿Cuál de las siguientes fracciones es equivalente a 1/2?",
+    "visualConfig": { "type": "circle", "numerator": 1, "denominator": 2 },
+    "options": [
+      { "id": "a", "text": "4/8", "isCorrect": true, "feedback": "¡Exacto! 4 es la mitad de 8, igual que 1 es la mitad de 2." },
+      { "id": "b", "text": "2/3", "isCorrect": false, "feedback": "2 no es la mitad de 3." },
+      { "id": "c", "text": "1/4", "isCorrect": false, "feedback": "1/4 es la mitad de 1/2, no su equivalente." }
+    ],
+    "hints": [
+      "Busca una fracción donde el número de arriba sea exactamente la mitad del de abajo.",
+      "Multiplica 1 × 4 y 2 × 4.",
+      "Obtienes 4/8."
+    ],
+    "explanation": "Multiplicando arriba y abajo por 4: (1×4)/(2×4) = 4/8. Ambas representan la mitad del todo."
+  },
+  {
+    "id": "prac_p3_2",
+    "skillId": "p3_equivalencia",
+    "difficulty": "medio",
+    "prompt": "Completa la igualdad para que sean equivalentes: 2/5 = ?/15",
+    "options": [
+      { "id": "a", "text": "6", "isCorrect": true, "feedback": "¡Excelente! Como el 5 se multiplicó por 3 para dar 15, el 2 se multiplica por 3 dando 6." },
+      { "id": "b", "text": "10", "isCorrect": false, "feedback": "El factor multiplicador fue 3 (5×3=15), no 5." },
+      { "id": "c", "text": "4", "isCorrect": false, "feedback": "Si multiplicas 2 por 2 te da 4, pero abajo multiplicaste por 3." }
+    ],
+    "hints": [
+      "¿Por cuánto multiplicaste el 5 para llegar a 15? 5 × ? = 15.",
+      "El factor es 3, porque 5 × 3 = 15.",
+      "Multiplica el numerador 2 por 3: 2 × 3 = 6."
+    ],
+    "explanation": "5 × 3 = 15. Por tanto, 2 × 3 = 6. La fracción equivalente es 6/15."
+  },
+  {
+    "id": "prac_p4_1",
+    "skillId": "p4_simplificacion",
+    "difficulty": "facil",
+    "prompt": "Simplifica la fracción 10/20 dividiendo entre 10.",
+    "options": [
+      { "id": "a", "text": "1/2", "isCorrect": true, "feedback": "¡Perfecto! 10 ÷ 10 = 1 y 20 ÷ 10 = 2." },
+      { "id": "b", "text": "2/4", "isCorrect": false, "feedback": "Es equivalente, pero al dividir entre 10 queda directamente en 1/2." },
+      { "id": "c", "text": "5/10", "isCorrect": false, "feedback": "Dividiendo entre 10 el numerador resulta 1, no 5." }
+    ],
+    "hints": [
+      "Calcula 10 dividido entre 10.",
+      "Calcula 20 dividido entre 10.",
+      "El resultado es 1 arriba y 2 abajo: 1/2."
+    ],
+    "explanation": "10 ÷ 10 = 1, y 20 ÷ 10 = 2. Obtenemos 1/2."
+  },
+  {
+    "id": "prac_p4_2",
+    "skillId": "p4_simplificacion",
+    "difficulty": "medio",
+    "prompt": "¿Cuál de las siguientes fracciones YA ES irreducible (no se puede simplificar más)?",
+    "options": [
+      { "id": "a", "text": "3/7", "isCorrect": true, "feedback": "¡Muy bien! 3 y 7 son números primos entre sí y no comparten divisores comunes." },
+      { "id": "b", "text": "4/8", "isCorrect": false, "feedback": "Ambos se pueden dividir entre 4 dando 1/2." },
+      { "id": "c", "text": "9/15", "isCorrect": false, "feedback": "Ambos se pueden dividir entre 3 dando 3/5." },
+      { "id": "d", "text": "6/10", "isCorrect": false, "feedback": "Ambos son pares, se pueden dividir entre 2 dando 3/5." }
+    ],
+    "hints": [
+      "Comprueba si ambos números se pueden dividir por 2, 3 o 5.",
+      "En 3/7, el 3 solo se divide por 3 y el 7 no está en la tabla del 3.",
+      "Por lo tanto, 3/7 es irreducible."
+    ],
+    "explanation": "El máximo común divisor entre 3 y 7 es 1. Es una fracción irreducible."
+  },
+  {
+    "id": "prac_p5_1",
+    "skillId": "p5_comparacion",
+    "difficulty": "facil",
+    "prompt": "¿Cuál fracción es mayor: 3/5 o 1/5?",
+    "visualConfig": { "type": "bar", "numerator": 3, "denominator": 5, "comparisonNumerator": 1, "comparisonDenominator": 5 },
+    "options": [
+      { "id": "a", "text": "3/5", "isCorrect": true, "feedback": "¡Correcto! Al tener el mismo denominador (quintos), 3 partes es más que 1 parte." },
+      { "id": "b", "text": "1/5", "isCorrect": false, "feedback": "1 parte es menor que 3 partes." },
+      { "id": "c", "text": "Son iguales", "isCorrect": false, "feedback": "Los numeradores son distintos." }
+    ],
+    "hints": [
+      "Los denominadores son iguales (5).",
+      "Compara los numeradores 3 y 1.",
+      "3 > 1, por lo tanto 3/5 > 1/5."
+    ],
+    "explanation": "Con igual denominador, gana la que tiene mayor numerador: 3/5 > 1/5."
+  },
+  {
+    "id": "prac_p5_2",
+    "skillId": "p5_comparacion",
+    "difficulty": "desafio",
+    "prompt": "¿Cuál es mayor: 1/3 o 1/6?",
+    "visualConfig": { "type": "circle", "numerator": 1, "denominator": 3, "comparisonNumerator": 1, "comparisonDenominator": 6 },
+    "options": [
+      { "id": "a", "text": "1/3 es mayor", "isCorrect": true, "feedback": "¡Impresionante! Cortar una pizza en 3 da rebanadas mucho más grandes que cortarla en 6." },
+      { "id": "b", "text": "1/6 es mayor porque el 6 es más grande", "isCorrect": false, "feedback": "¡Cuidado con la trampa! Al cortar en más partes (6), cada parte se vuelve más pequeña." },
+      { "id": "c", "text": "Son iguales", "isCorrect": false, "feedback": "1 tercio equivale a 2 sextos, no a 1 sexto." }
+    ],
+    "hints": [
+      "Visualiza una pizza dividida entre 3 personas contra una entre 6 personas.",
+      "Cuantas menos personas compartan, más grande es la rebanada.",
+      "1/3 equivale a 2/6, que es mayor que 1/6."
+    ],
+    "explanation": "Cuando los numeradores son iguales, el denominador menor indica porciones más grandes. 1/3 > 1/6."
+  },
+  {
+    "id": "prac_p6_1",
+    "skillId": "p6_recta",
+    "difficulty": "facil",
+    "prompt": "En una recta de 0 a 1 dividida en 6 tramos iguales, ¿qué fracción se encuentra en la 4.ª marca?",
+    "visualConfig": { "type": "number-line", "numerator": 4, "denominator": 6 },
+    "options": [
+      { "id": "a", "text": "4/6", "isCorrect": true, "feedback": "¡Exacto! Cada división es 1/6, así que 4 marcas son 4/6." },
+      { "id": "b", "text": "6/4", "isCorrect": false, "feedback": "6/4 estaría más allá del 1." },
+      { "id": "c", "text": "2/6", "isCorrect": false, "feedback": "2/6 está en la 2.ª marca." }
+    ],
+    "hints": [
+      "El total de partes en el tramo es 6.",
+      "Avanzaste 4 divisiones.",
+      "La posición es 4/6."
+    ],
+    "explanation": "Cada intervalo mide 1/6. Avanzar 4 intervalos ubica el punto en 4/6 (o 2/3 simplificado)."
+  },
+  {
+    "id": "prac_p7_1",
+    "skillId": "p7_suma_igual_den",
+    "difficulty": "facil",
+    "prompt": "¿Cuánto es 1/8 + 4/8?",
+    "visualConfig": { "type": "circle", "numerator": 5, "denominator": 8 },
+    "options": [
+      { "id": "a", "text": "5/8", "isCorrect": true, "feedback": "¡Muy bien! 1 + 4 = 5 sobre 8." },
+      { "id": "b", "text": "5/16", "isCorrect": false, "feedback": "Recuerda: ¡los denominadores no se suman!" },
+      { "id": "c", "text": "4/8", "isCorrect": false, "feedback": "Debes agregar el 1/8 al 4/8." }
+    ],
+    "hints": [
+      "El denominador se queda en 8.",
+      "Suma 1 + 4 arriba.",
+      "1 + 4 = 5, resultado: 5/8."
+    ],
+    "explanation": "1/8 + 4/8 = (1 + 4)/8 = 5/8."
+  },
+  {
+    "id": "prac_p7_2",
+    "skillId": "p7_suma_igual_den",
+    "difficulty": "medio",
+    "prompt": "Suma y simplifica si es posible: 3/10 + 2/10",
+    "options": [
+      { "id": "a", "text": "5/10, que simplificado es 1/2", "isCorrect": true, "feedback": "¡Excelente cálculo y simplificación completa!" },
+      { "id": "b", "text": "5/20, que es 1/4", "isCorrect": false, "feedback": "No sumes los denominadores abajo." },
+      { "id": "c", "text": "1/10", "isCorrect": false, "feedback": "Eso sería si estuvieras restando, pero es una suma." }
+    ],
+    "hints": [
+      "Primero suma: 3/10 + 2/10 = 5/10.",
+      "Ahora simplifica 5/10 dividiendo arriba y abajo entre 5.",
+      "5 ÷ 5 = 1 y 10 ÷ 5 = 2 ==> 1/2."
+    ],
+    "explanation": "3/10 + 2/10 = 5/10. Dividiendo entre 5: 5/10 = 1/2."
+  },
+  {
+    "id": "prac_p8_1",
+    "skillId": "p8_resta_igual_den",
+    "difficulty": "facil",
+    "prompt": "Calcula: 7/12 - 2/12",
+    "options": [
+      { "id": "a", "text": "5/12", "isCorrect": true, "feedback": "¡Perfecto! 7 - 2 = 5, conservando el 12." },
+      { "id": "b", "text": "5/0", "isCorrect": false, "feedback": "El denominador no se resta entre sí." },
+      { "id": "c", "text": "9/12", "isCorrect": false, "feedback": "Ese sería el resultado si sumaras en vez de restar." }
+    ],
+    "hints": [
+      "Denominador común = 12.",
+      "Resta 7 menos 2 arriba.",
+      "7 - 2 = 5, por tanto 5/12."
+    ],
+    "explanation": "7/12 - 2/12 = (7 - 2)/12 = 5/12."
+  },
+  {
+    "id": "prac_p9_1",
+    "skillId": "p9_contexto",
+    "difficulty": "medio",
+    "prompt": "En una carrera de relevos de 1 kilómetro, Martín corrió 2/5 de km y Lucía corrió 2/5 de km. ¿Qué fracción del kilómetro recorrieron entre los dos?",
+    "options": [
+      { "id": "a", "text": "4/5 de km", "isCorrect": true, "feedback": "¡Muy bien! 2/5 + 2/5 = 4/5 de kilómetro." },
+      { "id": "b", "text": "4/10 de km", "isCorrect": false, "feedback": "Recuerda mantener el denominador de quintos al sumar." },
+      { "id": "c", "text": "1 km completo", "isCorrect": false, "feedback": "Aún les faltó 1/5 para completar el kilómetro entero." }
+    ],
+    "hints": [
+      "Junta la distancia de Martín con la de Lucía sumando sus fracciones.",
+      "2/5 + 2/5.",
+      "(2 + 2)/5 = 4/5."
+    ],
+    "explanation": "Sumamos ambas distancias: 2/5 + 2/5 = 4/5 de km. Les falta 1/5 para llegar a 5/5 (1 km)."
+  },
+  {
+    "id": "prac_p10_1",
+    "skillId": "p10_repaso",
+    "difficulty": "desafio",
+    "prompt": "Un depósito de agua tenía 8/9 de su capacidad. Se usaron 5/9 para regar el huerto y luego llovió, añadiendo 2/9. ¿Qué fracción de agua tiene el depósito al final?",
+    "options": [
+      { "id": "a", "text": "5/9", "isCorrect": true, "feedback": "¡Magnífico razonamiento! 8/9 - 5/9 = 3/9, y luego 3/9 + 2/9 = 5/9." },
+      { "id": "b", "text": "1/9", "isCorrect": false, "feedback": "Recuerda sumar los 2/9 que aportó la lluvia." },
+      { "id": "c", "text": "7/9", "isCorrect": false, "feedback": "Revisa primero la resta del agua usada: 8 - 5 = 3." }
+    ],
+    "hints": [
+      "Paso 1: Tenía 8/9 y se gastaron 5/9. Calcula 8/9 - 5/9.",
+      "Paso 2: Quedaron 3/9. Ahora súmale los 2/9 de la lluvia.",
+      "3/9 + 2/9 = 5/9."
+    ],
+    "explanation": "Operación combinada: 8/9 - 5/9 + 2/9 = (8 - 5 + 2)/9 = 5/9 de capacidad."
+  }
+]

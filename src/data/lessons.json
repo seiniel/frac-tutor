@@ -1,0 +1,539 @@
+[
+  {
+    "id": "p1_concepto",
+    "order": 1,
+    "title": "1. ¿Qué es una fracción?",
+    "subtitle": "Partes iguales de un todo",
+    "summary": "Una fracción representa una o varias partes de una unidad que ha sido dividida en porciones exactamente iguales.",
+    "estimatedMinutes": 3,
+    "keyTakeaway": "El secreto de una fracción es que todas sus partes deben ser exactamente del mismo tamaño.",
+    "visualType": "bar",
+    "sections": [
+      {
+        "title": "Imagina una barra de chocolate",
+        "content": "Si divides una barra en 4 trozos idénticos y tomas 1 trozo, tienes 1 de 4 partes. Matemáticamente se escribe 1/4. Si los trozos fueran de tamaños disparejos, no sería una fracción justa.",
+        "interactiveConfig": {
+          "type": "bar",
+          "initialNumerator": 1,
+          "initialDenominator": 4,
+          "label": "Toca los trozos para seleccionar cuántos tomas"
+        },
+        "strategyTip": "Pregúntate siempre: ¿todas las divisiones son idénticas? Si la respuesta es sí, ¡es una fracción!"
+      },
+      {
+        "title": "¿Por qué no usamos solo números enteros?",
+        "content": "En el mundo real rara vez usamos cosas enteras. Usamos media hora (1/2), tres cuartos de litro de leche (3/4) o un tercio de taza de azúcar (1/3). Las fracciones nos dan precisión milimétrica sin inventar unidades nuevas.",
+        "interactiveConfig": {
+          "type": "circle",
+          "initialNumerator": 3,
+          "initialDenominator": 4,
+          "label": "Observa cómo 3 de 4 rebanadas llenan casi todo el círculo"
+        }
+      }
+    ],
+    "fadedExample": {
+      "title": "Ejemplo con Pistas Desvanecidas: La bandera de rayas",
+      "problemStatement": "Una bandera rectangular está dividida en 5 franjas horizontales iguales. 2 de ellas son azules y 3 blancas. ¿Qué fracción representa la parte azul?",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Identificar el total de partes (denominador)",
+          "explanation": "Contamos cuántas divisiones iguales forman toda la bandera en total: hay 5 franjas.",
+          "solutionPart": "Total = 5",
+          "fadedRatio": 0
+        },
+        {
+          "stepNumber": 2,
+          "title": "Identificar las partes que nos interesan (numerador)",
+          "explanation": "La pregunta pide la parte azul. Contamos solo las franjas azules.",
+          "solutionPart": "Parte azul = 2",
+          "fadedRatio": 0.3
+        },
+        {
+          "stepNumber": 3,
+          "title": "Escribir la fracción final",
+          "explanation": "¿Cómo colocamos las partes seleccionadas sobre el total?",
+          "promptOrAction": "Escribe las franjas azules arriba y el total abajo.",
+          "hint": "Arriba va 2, abajo va 5.",
+          "solutionPart": "2/5 de la bandera es azul",
+          "fadedRatio": 0.8
+        }
+      ],
+      "reflectionPrompt": "¿Qué fracción de la bandera corresponde a las franjas blancas? (Pista: 3 de 5 = 3/5)"
+    }
+  },
+  {
+    "id": "p2_terminos",
+    "order": 2,
+    "title": "2. Numerador y Denominador",
+    "subtitle": "¿Quién cuenta y quién divide?",
+    "summary": "El número de abajo (denominador) da nombre al tamaño de las partes; el de arriba (numerador) cuenta cuántas tienes.",
+    "estimatedMinutes": 4,
+    "keyTakeaway": "El Denominador Denomina (dice el tamaño del trozo). El Numerador Numera (cuenta cuántos trozos tienes).",
+    "visualType": "circle",
+    "sections": [
+      {
+        "title": "La regla de oro de los nombres",
+        "content": "En la fracción 3/8:\n• 8 es el DENOMINADOR: indica que el círculo completo se cortó en 8 pedazos iguales (octavos).\n• 3 es el NUMERADOR: indica que hemos tomado o coloreado 3 de esos pedazos.",
+        "interactiveConfig": {
+          "type": "circle",
+          "initialNumerator": 3,
+          "initialDenominator": 8,
+          "label": "3 octavos: cada octavo mide 45 grados"
+        },
+        "strategyTip": "Nemotecnia: 'D' de Denominador = 'D' de Debajo."
+      },
+      {
+        "title": "¿Qué pasa si aumentas el denominador?",
+        "content": "Entre mayor sea el número de abajo, más cortes le haces al pastel y, por lo tanto, ¡cada trozo se vuelve más pequeño! 1/10 es mucho más pequeño que 1/2.",
+        "interactiveConfig": {
+          "type": "bar",
+          "initialNumerator": 1,
+          "initialDenominator": 8,
+          "label": "Compara mentalmente 1/2 contra 1/8"
+        }
+      }
+    ],
+    "fadedExample": {
+      "title": "Ejemplo con Pistas Desvanecidas: Rebanadas de pizza",
+      "problemStatement": "En una fiesta, una pizza se corta en 6 porciones iguales. Mateo se come 4 porciones. ¿Cuál es el numerador y cuál el denominador de lo que comió?",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Encontrar el denominador",
+          "explanation": "El denominador es el total de porciones en que se cortó la pizza original.",
+          "solutionPart": "Denominador = 6 (cortes totales)",
+          "fadedRatio": 0
+        },
+        {
+          "stepNumber": 2,
+          "title": "Encontrar el numerador",
+          "explanation": "El numerador cuenta cuántas porciones tomó Mateo.",
+          "hint": "¿Cuántos trozos comió Mateo?",
+          "solutionPart": "Numerador = 4 (trozos comidos)",
+          "fadedRatio": 0.5
+        },
+        {
+          "stepNumber": 3,
+          "title": "Expresar la fracción",
+          "explanation": "Armamos la fracción completa.",
+          "solutionPart": "Mateo comió 4/6 de pizza",
+          "fadedRatio": 0.9
+        }
+      ],
+      "reflectionPrompt": "¿Qué fracción quedó sin comer en la caja? (Pista: 6 - 4 = 2, o sea 2/6)"
+    }
+  },
+  {
+    "id": "p3_equivalencia",
+    "order": 3,
+    "title": "3. Fracciones Equivalentes",
+    "subtitle": "Misma cantidad, diferente disfraz",
+    "summary": "Dos fracciones son equivalentes cuando representan exactamente la misma porción del total, aunque tengan números distintos.",
+    "estimatedMinutes": 4,
+    "keyTakeaway": "Multiplicar o dividir arriba y abajo por el mismo número no cambia la cantidad de comida, solo el número de cortes.",
+    "visualType": "bar",
+    "sections": [
+      {
+        "title": "Comer medio pastel vs dos cuartos",
+        "content": "Si cortas un pastel en 2 mitades y comes 1, comiste 1/2. Si lo cortas en 4 trozos y comes 2, comiste 2/4. ¡Comiste exactamente la misma cantidad! Por eso decimos que 1/2 = 2/4 = 4/8.",
+        "interactiveConfig": {
+          "type": "bar",
+          "initialNumerator": 1,
+          "initialDenominator": 2,
+          "targetNumerator": 2,
+          "targetDenominator": 4,
+          "label": "1/2 y 2/4 ocupan el mismo espacio en la barra"
+        },
+        "strategyTip": "Para encontrar una fracción equivalente, multiplica numerador y denominador por el mismo número: (1 × 2) / (2 × 2) = 2/4."
+      }
+    ],
+    "fadedExample": {
+      "title": "Ejemplo con Pistas Desvanecidas: Encontrar equivalencia",
+      "problemStatement": "¿Cuál es una fracción equivalente a 2/3 con denominador 9?",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Ver cómo cambió el denominador",
+          "explanation": "El denominador pasó de 3 a 9. ¿Por qué número se multiplicó el 3?",
+          "solutionPart": "3 × 3 = 9 (el factor multiplicador es 3)",
+          "fadedRatio": 0
+        },
+        {
+          "stepNumber": 2,
+          "title": "Aplicar la misma multiplicación arriba",
+          "explanation": "Para no cambiar el valor, multiplicamos el numerador (2) por el mismo factor (3).",
+          "hint": "Calcula 2 × 3",
+          "solutionPart": "2 × 3 = 6",
+          "fadedRatio": 0.6
+        },
+        {
+          "stepNumber": 3,
+          "title": "Escribir la fracción equivalente",
+          "explanation": "Juntamos el nuevo numerador con el nuevo denominador.",
+          "solutionPart": "2/3 es equivalente a 6/9",
+          "fadedRatio": 1
+        }
+      ],
+      "reflectionPrompt": "¿Son equivalentes 3/5 y 6/10? Multiplica 3×2 y 5×2 para comprobar."
+    }
+  },
+  {
+    "id": "p4_simplificacion",
+    "order": 4,
+    "title": "4. Simplificación y Fracciones Irreducibles",
+    "subtitle": "Hacer los números más sencillos",
+    "summary": "Simplificar es dividir numerador y denominador entre un divisor común hasta que ya no se puedan dividir más.",
+    "estimatedMinutes": 5,
+    "keyTakeaway": "Una fracción irreducible es la forma más limpia y elegante de decir una cantidad (ejemplo: 2/4 se simplifica a 1/2).",
+    "visualType": "circle",
+    "sections": [
+      {
+        "title": "¿Por qué simplificamos?",
+        "content": "Nadie dice 'caminé cuatro octavos de kilómetro'; decimos 'caminé medio kilómetro'. Al dividir 4 y 8 entre 4 obtenemos 1/2. Es más fácil de imaginar y calcular.",
+        "interactiveConfig": {
+          "type": "circle",
+          "initialNumerator": 4,
+          "initialDenominator": 8,
+          "label": "4 de 8 porciones cubren exactamente la mitad (1/2)"
+        },
+        "strategyTip": "Busca números entre los que puedas dividir ambos: 2 (si son pares), 3 (si suman múltiplo de 3) o 5 (si terminan en 0 o 5)."
+      }
+    ],
+    "fadedExample": {
+      "title": "Ejemplo con Pistas Desvanecidas: Simplificar 6/18",
+      "problemStatement": "Simplifica la fracción 6/18 hasta su forma irreducible.",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Buscar un divisor común inicial",
+          "explanation": "Tanto el 6 como el 18 son números pares, así que ambos se pueden dividir entre 2.",
+          "solutionPart": "6 ÷ 2 = 3   y   18 ÷ 2 = 9   ==>   3/9",
+          "fadedRatio": 0
+        },
+        {
+          "stepNumber": 2,
+          "title": "¿Se puede seguir dividiendo?",
+          "explanation": "Miramos 3/9. Ambos están en la tabla del 3, así que dividimos entre 3.",
+          "hint": "¿Cuánto es 3 ÷ 3 y 9 ÷ 3?",
+          "solutionPart": "3 ÷ 3 = 1   y   9 ÷ 3 = 3   ==>   1/3",
+          "fadedRatio": 0.6
+        },
+        {
+          "stepNumber": 3,
+          "title": "Verificar si es irreducible",
+          "explanation": "El 1 ya no se puede dividir más entre enteros mayores que 1.",
+          "solutionPart": "La forma irreducible de 6/18 es 1/3",
+          "fadedRatio": 1
+        }
+      ],
+      "reflectionPrompt": "¿Qué pasa si dividías directamente entre 6 al inicio? 6÷6=1 y 18÷6=3. ¡Llegabas directo en un solo paso!"
+    }
+  },
+  {
+    "id": "p5_comparacion",
+    "order": 5,
+    "title": "5. Comparar Fracciones",
+    "subtitle": "¿Cuál de las dos es más grande?",
+    "summary": "Aprende a comparar fracciones con igual denominador observando el numerador, y fracciones con igual numerador analizando el tamaño de sus partes.",
+    "estimatedMinutes": 4,
+    "keyTakeaway": "Con igual denominador: mayor numerador gana. Con igual numerador: menor denominador gana (partes más grandes).",
+    "visualType": "bar",
+    "sections": [
+      {
+        "title": "Caso 1: Mismo denominador (trozos del mismo tamaño)",
+        "content": "Si comparas 3/7 con 5/7, ambos están cortados en séptimos. Obviamente 5 trozos es más que 3 trozos. Por lo tanto: 5/7 > 3/7.",
+        "interactiveConfig": {
+          "type": "bar",
+          "initialNumerator": 3,
+          "initialDenominator": 7,
+          "targetNumerator": 5,
+          "targetDenominator": 7,
+          "label": "Compara la longitud de 3/7 frente a 5/7"
+        }
+      },
+      {
+        "title": "Caso 2: Mismo numerador (misma cantidad de trozos)",
+        "content": "Si comparas 2/3 con 2/5, tienes 2 trozos en ambos casos. Pero los tercios (1/3) son rebanadas mucho más gordas que los quintos (1/5). Por lo tanto: 2/3 > 2/5.",
+        "strategyTip": "Cuidado con la trampa mental: que un número sea más grande no significa que la fracción sea mayor si está en el denominador."
+      }
+    ],
+    "fadedExample": {
+      "title": "Ejemplo con Pistas Desvanecidas: ¿Quién comió más?",
+      "problemStatement": "Sofía comió 3/8 de una barra de cereal y Lucas comió 5/8 de una barra idéntica. ¿Quién comió más?",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Comparar los denominadores",
+          "explanation": "Ambos tienen denominador 8. Las barras se cortaron en trozos del mismo tamaño (octavos).",
+          "solutionPart": "Mismo tamaño de trozo: octavos.",
+          "fadedRatio": 0
+        },
+        {
+          "stepNumber": 2,
+          "title": "Comparar los numeradores",
+          "explanation": "Sofía comió 3 trozos y Lucas comió 5 trozos. Comparamos 5 contra 3.",
+          "hint": "5 es mayor que 3.",
+          "solutionPart": "5 > 3, por lo tanto 5/8 > 3/8.",
+          "fadedRatio": 0.5
+        },
+        {
+          "stepNumber": 3,
+          "title": "Conclusión",
+          "explanation": "Respondemos a la pregunta original del problema.",
+          "solutionPart": "Lucas comió más barra de cereal que Sofía.",
+          "fadedRatio": 1
+        }
+      ],
+      "reflectionPrompt": "Si Sofía hubiera comido 3/4 y Lucas 3/8, ¿quién ganaría? (Recuerda: los cuartos son más grandes que los octavos)."
+    }
+  },
+  {
+    "id": "p6_recta",
+    "order": 6,
+    "title": "6. Fracciones en la Recta Numérica",
+    "subtitle": "Ubicación espacial exacta",
+    "summary": "La recta numérica te muestra dónde viven las fracciones entre el 0 y el 1 (o más allá) de forma continua y geométrica.",
+    "estimatedMinutes": 5,
+    "keyTakeaway": "El segmento entre 0 y 1 se divide en tantas partes como dice el denominador. Cuentas marcas según el numerador.",
+    "visualType": "number-line",
+    "sections": [
+      {
+        "title": "Viajar del 0 al 1",
+        "content": "Para ubicar 3/4 en la recta numérica:\n1. Tomas el espacio entre 0 y 1.\n2. Lo divides en 4 saltos iguales (0/4, 1/4, 2/4, 3/4, 4/4).\n3. Avanzas 3 saltos desde el 0. ¡Ahí está exactamente 3/4!",
+        "interactiveConfig": {
+          "type": "number-line",
+          "initialNumerator": 3,
+          "initialDenominator": 4,
+          "label": "Mueve el punto en la recta para ver las divisiones"
+        },
+        "strategyTip": "El 1 entero siempre es igual a una fracción con numerador y denominador iguales (ejemplo: 4/4 = 1)."
+      }
+    ],
+    "fadedExample": {
+      "title": "Ejemplo con Pistas Desvanecidas: Ubicar 2/5",
+      "problemStatement": "¿En qué marca entre 0 y 1 se ubica 2/5 si la recta tiene 5 divisiones iguales?",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Entender los saltos de la recta",
+          "explanation": "Como el denominador es 5, cada marca representa 1/5 del recorrido.",
+          "solutionPart": "Las marcas son: 0, 1/5, 2/5, 3/5, 4/5 y 5/5 (1).",
+          "fadedRatio": 0
+        },
+        {
+          "stepNumber": 2,
+          "title": "Contar desde el origen (0)",
+          "explanation": "El numerador es 2, por lo que contamos 2 divisiones hacia la derecha.",
+          "hint": "Avanza dos pasos de 1/5.",
+          "solutionPart": "Saltamos a la segunda marca a la derecha del 0.",
+          "fadedRatio": 0.5
+        },
+        {
+          "stepNumber": 3,
+          "title": "Resultado",
+          "explanation": "El punto queda en la posición 2/5.",
+          "solutionPart": "Punto ubicado exactamente en la segunda marca: 2/5.",
+          "fadedRatio": 1
+        }
+      ],
+      "reflectionPrompt": "¿Qué fracción está justo a la mitad entre 0 y 1? (Pista: 1/2, que en quintos estaría entre 2/5 y 3/5)."
+    }
+  },
+  {
+    "id": "p7_suma_igual_den",
+    "order": 7,
+    "title": "7. Suma con Igual Denominador",
+    "subtitle": "Juntar partes del mismo tamaño",
+    "summary": "Cuando los denominadores son idénticos, los trozos son compatibles. Solo sumas los numeradores y dejas el denominador igual.",
+    "estimatedMinutes": 4,
+    "keyTakeaway": "¡NUNCA sumes los números de abajo! Si tienes 2 octavos y agregas 3 octavos, tienes 5 octavos, no dieciseisavos.",
+    "visualType": "bar",
+    "sections": [
+      {
+        "title": "La trampa más común en matemáticas",
+        "content": "Muchos estudiantes cometen el error de hacer: 1/5 + 2/5 = 3/10 (¡Error!).\nPiensa en manzanas: 1 manzana + 2 manzanas = 3 manzanas.\nCon fracciones es igual: 1 quinto + 2 quintos = 3 quintos (3/5). El tamaño de la porción no cambia, solo la cantidad que tienes.",
+        "interactiveConfig": {
+          "type": "bar",
+          "initialNumerator": 3,
+          "initialDenominator": 5,
+          "label": "1/5 verde + 2/5 naranja = 3/5 en total"
+        },
+        "strategyTip": "Regla infalible: Denominador igual se mantiene; numeradores se suman: a/c + b/c = (a + b)/c."
+      }
+    ],
+    "fadedExample": {
+      "title": "Ejemplo con Pistas Desvanecidas: Sumar 2/7 + 3/7",
+      "problemStatement": "Calcula el resultado de: 2/7 + 3/7",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Revisar los denominadores",
+          "explanation": "Ambas fracciones tienen denominador 7. Son del mismo tipo.",
+          "solutionPart": "Denominador común = 7 (se queda igual)",
+          "fadedRatio": 0
+        },
+        {
+          "stepNumber": 2,
+          "title": "Sumar los numeradores",
+          "explanation": "Sumamos los números de arriba: 2 + 3.",
+          "hint": "¿Cuánto es 2 + 3?",
+          "solutionPart": "2 + 3 = 5",
+          "fadedRatio": 0.5
+        },
+        {
+          "stepNumber": 3,
+          "title": "Escribir la fracción suma",
+          "explanation": "Colocamos el resultado arriba y el denominador intacto abajo.",
+          "solutionPart": "2/7 + 3/7 = 5/7",
+          "fadedRatio": 1
+        }
+      ],
+      "reflectionPrompt": "Si sumas 4/9 + 5/9 obtienes 9/9. ¿A cuánto equivale 9/9 en números enteros? (¡A 1 entero!)"
+    }
+  },
+  {
+    "id": "p8_resta_igual_den",
+    "order": 8,
+    "title": "8. Resta con Igual Denominador",
+    "subtitle": "Quitar porciones del mismo tamaño",
+    "summary": "De la misma manera que en la suma, al restar fracciones con el mismo denominador solo restas los numeradores y conservas el denominador.",
+    "estimatedMinutes": 4,
+    "keyTakeaway": "Al restar, mantén la base común: a/c - b/c = (a - b)/c.",
+    "visualType": "circle",
+    "sections": [
+      {
+        "title": "Restar es quitar trozos",
+        "content": "Si tienes una pizza cortada en 8 porciones y quedan 7/8, y luego te comes 3/8:\nTe quedan (7 - 3)/8 = 4/8 de pizza. Luego puedes simplificar 4/8 a 1/2.",
+        "interactiveConfig": {
+          "type": "circle",
+          "initialNumerator": 4,
+          "initialDenominator": 8,
+          "label": "7/8 menos 3/8 te deja con 4/8 (la mitad)"
+        },
+        "strategyTip": "Verifica que el resultado tenga sentido: si restas, el numerador resultante siempre debe ser menor que el inicial."
+      }
+    ],
+    "fadedExample": {
+      "title": "Ejemplo con Pistas Desvanecidas: Restar 6/11 - 2/11",
+      "problemStatement": "Calcula el resultado de: 6/11 - 2/11",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Conservar el denominador",
+          "explanation": "El denominador 11 se mantiene intacto.",
+          "solutionPart": "Denominador del resultado = 11",
+          "fadedRatio": 0
+        },
+        {
+          "stepNumber": 2,
+          "title": "Restar los numeradores",
+          "explanation": "Restamos los números superiores: 6 - 2.",
+          "hint": "¿Cuánto es 6 - 2?",
+          "solutionPart": "6 - 2 = 4",
+          "fadedRatio": 0.5
+        },
+        {
+          "stepNumber": 3,
+          "title": "Resultado final",
+          "explanation": "Escribimos el resultado fraccionario.",
+          "solutionPart": "6/11 - 2/11 = 4/11",
+          "fadedRatio": 1
+        }
+      ],
+      "reflectionPrompt": "Si tienes 1 entero y le restas 1/4, recuerda que 1 = 4/4. Entonces 4/4 - 1/4 = 3/4."
+    }
+  },
+  {
+    "id": "p9_contexto",
+    "order": 9,
+    "title": "9. Problemas de la Vida Diaria",
+    "subtitle": "Fracciones en acción en el mundo real",
+    "summary": "Resuelve situaciones auténticas de cocina, deportes, tiempo y compras usando las herramientas de fracciones aprendidas.",
+    "estimatedMinutes": 5,
+    "keyTakeaway": "Traducir un problema verbal es buscar dos cosas: ¿en cuánto se dividió el total? y ¿cuántas partes se usan o quedan?",
+    "visualType": "bar",
+    "sections": [
+      {
+        "title": "El método de los 3 pasos",
+        "content": "1. Leer con calma e identificar el todo.\n2. Escribir los datos en fracciones.\n3. Elegir la operación (sumar para juntar, restar para ver qué falta o queda).",
+        "strategyTip": "Haz un dibujo rápido de una barra o círculo si te sientes atascado. Verlo con los ojos despeja el 90% de las dudas."
+      }
+    ],
+    "fadedExample": {
+      "title": "Ejemplo con Pistas Desvanecidas: La batería del teléfono",
+      "problemStatement": "El teléfono de Carlos tenía 7/10 de carga por la mañana. Durante sus clases usó 3/10. Al llegar a casa cargó 2/10 más. ¿Qué fracción de batería tiene ahora?",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Paso 1: La batería usada (resta)",
+          "explanation": "Tenía 7/10 y gastó 3/10. Hacemos 7/10 - 3/10.",
+          "solutionPart": "(7 - 3)/10 = 4/10 de carga tras clases.",
+          "fadedRatio": 0
+        },
+        {
+          "stepNumber": 2,
+          "title": "Paso 2: La recarga (suma)",
+          "explanation": "Le quedaban 4/10 y cargó 2/10 más.",
+          "hint": "Suma 4/10 + 2/10.",
+          "solutionPart": "(4 + 2)/10 = 6/10",
+          "fadedRatio": 0.5
+        },
+        {
+          "stepNumber": 3,
+          "title": "Paso 3: Simplificación opcional",
+          "explanation": "6/10 se puede simplificar dividiendo entre 2.",
+          "solutionPart": "6/10 = 3/5 de batería.",
+          "fadedRatio": 1
+        }
+      ],
+      "reflectionPrompt": "¿Qué fracción le falta para tener la batería al 100% (5/5 o 10/10)? Le faltan 2/5 (o 4/10)."
+    }
+  },
+  {
+    "id": "p10_repaso",
+    "order": 10,
+    "title": "10. Repaso Integrado e Intercalado",
+    "subtitle": "Conexión y consolidación de destrezas",
+    "summary": "Mezcla conceptos para afianzar tu memoria a largo plazo: reconocer, simplificar, comparar y operar fracciones.",
+    "estimatedMinutes": 5,
+    "keyTakeaway": "La práctica intercalada (mezclar tipos de problemas) es la técnica con mayor evidencia científica para recordar conceptos meses después.",
+    "visualType": "circle",
+    "sections": [
+      {
+        "title": "El poder de intercalar",
+        "content": "Cuando haces 10 ejercicios del mismo tipo, tu cerebro se pone en piloto automático. Cuando intercalas uno de suma, luego uno de simplificar y luego uno de recta numérica, tu cerebro debe decidir activamente qué estrategia usar. ¡Eso crea conexiones duraderas!",
+        "strategyTip": "Respira hondo antes de cada ejercicio: identifica primero qué tipo de problema es antes de ponerte a calcular."
+      }
+    ],
+    "fadedExample": {
+      "title": "Ejemplo con Pistas Desvanecidas: Problema combinado",
+      "problemStatement": "¿Es cierto que 2/6 + 1/6 equivale a 1/2? Justifica tu respuesta.",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Realizar la suma",
+          "explanation": "2/6 + 1/6 tienen igual denominador. Sumamos numeradores: 2 + 1 = 3.",
+          "solutionPart": "2/6 + 1/6 = 3/6",
+          "fadedRatio": 0
+        },
+        {
+          "stepNumber": 2,
+          "title": "Simplificar el resultado",
+          "explanation": "Simplificamos 3/6 dividiendo numerador y denominador entre 3.",
+          "hint": "3 ÷ 3 = 1 y 6 ÷ 3 = 2",
+          "solutionPart": "3/6 = 1/2",
+          "fadedRatio": 0.5
+        },
+        {
+          "stepNumber": 3,
+          "title": "Conclusión",
+          "explanation": "¿Coincide con lo que afirmaba la pregunta?",
+          "solutionPart": "Sí, es totalmente cierto: 3/6 es equivalente a 1/2.",
+          "fadedRatio": 1
+        }
+      ],
+      "reflectionPrompt": "¡Has completado el mapa de conceptos de fracciones! Estás listo para dominar cualquier desafío sin temor."
+    }
+  }
+]

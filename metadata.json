@@ -1,0 +1,8 @@
+{
+  "name": "FracTutor: Fracciones sin Ansiedad",
+  "description": "PWA educativa de fracciones para estudiantes de 12 a 15 años con práctica espaciada, ejemplos interactivos y tutor socrático con IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
