@@ -5,7 +5,9 @@ import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig(() => {
-  return {
+  return { 
+     base: '/frac-tutor/',
+
     plugins: [
       react(),
       tailwindcss(),
